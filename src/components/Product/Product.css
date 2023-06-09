@@ -1,0 +1,16 @@
+
+.img {
+    background: url(./ProductCover.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 341px) and (min-width: 280px) {
+    .buttons {
+        font-size: 11px;
+    }
+
+    .buttons .buy {
+        padding: 8px 25px;
+    }
+}

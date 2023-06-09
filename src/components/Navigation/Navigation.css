@@ -1,0 +1,82 @@
+
+.menuLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: all .10s ease-in-out;
+}
+
+.icon {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all .10s ease-in-out;
+}
+
+.stickyNav{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background: #fdfffc;
+    box-shadow: 0 0 5px #1e1e1e;
+    transition: all .10s ease-in-out;
+}
+
+@media screen and (max-width: 769px) and (min-width: 280px) {
+
+    .icon {
+        display: block;
+        color: #00253e;
+    }
+
+    .menuButton  {
+        display: grid;
+        place-items: center;
+    }
+
+    .exisButton {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+
+
+    .menuLinks {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        border: 1px solid #00253e;
+        background: #fdfffc;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        max-width: 400px;
+        height: 50vh;
+        padding: 40px;
+        text-align: center;
+        z-index: 9999;
+        transition: all .15s ease-in-out;
+    }
+
+    .active {
+        left: 0;
+        transition: all .15s ease-in-out;
+    }
+
+    .menuLinks li {
+        margin: 10px;
+        color: #00253e;
+    }
+    
+}
+
+@media screen and (max-width: 380px) and (min-width: 280px) {
+    .search-input {
+        display: none;
+    }
+}
